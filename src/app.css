@@ -1,0 +1,21 @@
+.app{
+    height: 100vh;
+    display: flex;
+    background-color: #020230;
+    color: white;
+}
+
+.main{
+    width: 75%;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #020230), url("assets/download.gif") no-repeat center center; */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #020230), url("assets/bg.jpg") no-repeat center;
+
+    background-size: cover;
+}
+
+.pyramid{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
