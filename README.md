@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# KBC (Kaun Banega Crorepati) Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the KBC (Kaun Banega Crorepati) Web App! This project is a recreation of the popular game show "Kaun Banega Crorepati" using React. Test your general knowledge and try to win the top prize by answering multiple-choice questions correctly.
 
-## Available Scripts
+## Table of Contents
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Multiple-choice questions:** Answer questions to win virtual currency.
+- **Progressive difficulty:** Questions increase in difficulty as you progress.
+- **Sound effects:** Different sounds for correct and incorrect answers.
+- **Animations:** Visual feedback for correct and incorrect answers.
+- **Dynamic score:** Track your earnings as you play.
+- **Game Over:** Displays total earnings when the game ends.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Main Page](screenshots/main-page.png)
+*Main page of the game.*
 
-### `npm test`
+![Correct Answer](screenshots/correct-answer.png)
+*Correct answer with green highlight and sound effect.*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Wrong Answer](screenshots/wrong-answer.png)
+*Wrong answer with red highlight and sound effect.*
 
-### `npm run build`
+![Game Over](screenshots/game-over.png)
+*Game over screen showing the total earnings.*
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run this project locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the repository:**
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/yourusername/kbc-web-app.git
+   cd kbc-web-app
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Install dependencies:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Start the development server:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
+   ```
 
-## Learn More
+   The app will be available at `http://localhost:3000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Start the game:** The game starts automatically when you open the app.
+2. **Answer questions:** Click on the answer you think is correct.
+3. **Track your progress:** Your current earnings are displayed on the right.
+4. **Game Over:** When you answer a question incorrectly, the game ends and your total earnings are displayed.
 
-### Code Splitting
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+kbc-web-app
+│   README.md
+│   package.json
+│   .gitignore
+├───public
+│       index.html
+│       ...
+├───src
+│   │   index.js
+│   │   App.js
+│   │   app.css
+│   ├───components
+│   │       Trivia.jsx
+│   ├───assets
+│   │       play.mp3
+│   │       correct.mp3
+│   │       wrong.mp3
+│   └───data
+│           data.js
+```
 
-### Analyzing the Bundle Size
+- **public:** Contains the HTML file.
+- **src:** Contains the source code for the app.
+  - **components:** Contains the Trivia component.
+  - **assets:** Contains the sound files.
+  - **data:** Contains the questions data.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Note:
 
-### Deployment
+1. Replace the `screenshots` section with actual screenshots of your app.
+2. Replace `"https://github.com/yourusername/kbc-web-app.git"` with the actual URL of your GitHub repository.
+3. Ensure the `screenshots` folder exists in the repository and contains the relevant images.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This `README.md` provides a comprehensive guide to understanding, installing, and using your KBC web app.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
