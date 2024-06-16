@@ -1,4 +1,5 @@
-# KBC
+
+.............
 
 Here's a detailed `README.md` for your KBC (Kaun Banega Crorepati) web app using React:
 

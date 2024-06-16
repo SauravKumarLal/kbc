@@ -9,7 +9,6 @@ Welcome to the KBC (Kaun Banega Crorepati) Web App! This project is a recreation
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -22,7 +21,10 @@ Welcome to the KBC (Kaun Banega Crorepati) Web App! This project is a recreation
 
 ## Screenshots
 
-![Main Page](screenshots/main-page.png)
+![Start Page](screenshots/start-page.png)
+*Start page of the game.*
+
+![Main Page](screenshots/main-page.mp4)
 *Main page of the game.*
 
 ![Correct Answer](screenshots/correct-answer.png)
@@ -41,7 +43,7 @@ To run this project locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/kbc-web-app.git
+   git clone https://github.com/SauravKumarLal/kbc.git
    cd kbc-web-app
    ```
 
@@ -69,13 +71,13 @@ To run this project locally, follow these steps:
 ## Project Structure
 
 ```
-kbc-web-app
+kbc
 │   README.md
 │   package.json
 │   .gitignore
 ├───public
 │       index.html
-│       ...
+│      
 ├───src
 │   │   index.js
 │   │   App.js
@@ -83,34 +85,33 @@ kbc-web-app
 │   ├───components
 │   │       Trivia.jsx
 │   ├───assets
+|   |       bg.jgp
+│   │       download.gif
+│   │       correct.mp3
+│   │       wrong.mp3
+│   ├───data
+|   |
 │   │       play.mp3
 │   │       correct.mp3
 │   │       wrong.mp3
-│   └───data
-│           data.js
+│   └───           data.js
+└───screenshots
+        main-page.png
+        correct-answer.png
+        wrong-answer.png
+        game-over.png
+
 ```
 
 - **public:** Contains the HTML file.
 - **src:** Contains the source code for the app.
-  - **components:** Contains the Trivia component.
-  - **assets:** Contains the sound files.
+  - **assets:** Contains the background files.
+  - **components:** Contains the Trivia, Timer, Start(.jsx) component.
   - **data:** Contains the questions data.
+  - **sounds:** Contains the sound files.
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
-
-### Note:
-
-1. Replace the `screenshots` section with actual screenshots of your app.
-2. Replace `"https://github.com/yourusername/kbc-web-app.git"` with the actual URL of your GitHub repository.
-3. Ensure the `screenshots` folder exists in the repository and contains the relevant images.
-
-This `README.md` provides a comprehensive guide to understanding, installing, and using your KBC web app.
 
 
