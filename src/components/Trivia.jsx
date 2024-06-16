@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import useSound from "use-sound";
-import play from "../assets/play.mp3"
-import correct from "../assets/correct.mp3"
-import wrong from "../assets/wrong.mp3"
+import play from "../sounds/play.mp3"
+import correct from "../sounds/correct.mp3"
+import wrong from "../sounds/wrong.mp3"
 
 export default function Trivia({
   data,
@@ -32,14 +32,13 @@ export default function Trivia({
     }, duration);
   };
 
-
-
-
   const handleClick = (a) => {
     setSelectedAnswer(a);
     setClassName("answer active");
-    delay(3000, () => setClassName(a.correct ? "answer correct" : "answer wrong")
+    delay(3000, () => 
+      setClassName(a.correct ? "answer correct" : "answer wrong")
     );
+
     delay(5000, () =>
       {
         if(a.correct){
