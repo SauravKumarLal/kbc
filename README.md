@@ -22,19 +22,34 @@ Welcome to the KBC (Kaun Banega Crorepati) Web App! This project is a recreation
 ## Screenshots
 
 ![Start Page](screenshots/start-page.png)
+
 *Start page of the game.*
 
-![Main Page](screenshots/main-page.mp4)
+&nbsp;
+
+![Main Page](screenshots/main-page.png)
+
 *Main page of the game.*
 
+&nbsp;
+
 ![Correct Answer](screenshots/correct-answer.png)
+
 *Correct answer with green highlight and sound effect.*
 
+&nbsp;
+
 ![Wrong Answer](screenshots/wrong-answer.png)
+
 *Wrong answer with red highlight and sound effect.*
 
+&nbsp;
+
 ![Game Over](screenshots/game-over.png)
+
 *Game over screen showing the total earnings.*
+
+&nbsp;
 
 ## Installation
 
