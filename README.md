@@ -59,7 +59,7 @@ To run this project locally, follow these steps:
 
    ```bash
    git clone https://github.com/SauravKumarLal/kbc.git
-   cd kbc-web-app
+   cd kbc
    ```
 
 2. **Install dependencies:**
